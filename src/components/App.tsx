@@ -1,10 +1,14 @@
-import React from 'react';
+import React from "react";
+import { User } from "../model/Model";
 
-
-function App() {
-  return (
-   <div>Home App</div>
-  );
+interface AppState {
+  user: User | undefined;
 }
 
-export default App;
+export class App extends React.Component<{}, AppState> {
+  render() {
+    return <div>App class works as well!</div>;
+  }
+}
+
+
