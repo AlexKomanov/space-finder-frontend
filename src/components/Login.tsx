@@ -53,10 +53,10 @@ export class Login extends React.Component<LoginProps, LoginState> {
     let loginMessage: any;
     if(this.state.loginAttempted){
       if(this.state.loginSuccesfull) {
-        loginMessage = <label>Login Successfull</label>
+        loginMessage = <label style={{color: "green"}}>Login Successfull</label>
       }
       else {
-        loginMessage = <label>Login Failed</label>
+        loginMessage = <label style={{color: "red"}}>Login Failed</label>
       }
     }
     return(
